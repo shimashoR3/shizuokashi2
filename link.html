@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    ons.ready(function() {
+      console.log("Onsen UI is ready!");
+    });
+
+    if (ons.platform.isIPhoneX()) {
+      document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
+      document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
+    }
+  </script>
+</head>
+<body>
+
+    
+    <template id="navigatorSample">
+        <ons-page>
+            <ons-toolbar>
+                <div class="center">クイズ</div>
+                <div class="left">
+                    <ons-back-button>Back</ons-back-button>
+                </div>
+            </ons-toolbar>
+  
+<body>
+    <div id="app" class="row">
+        <div class="offset-3 col-15">
+            <div class="card">
+                <div class="card-body">
+                    <p class="badge badge-dark">第２問</p>
+                    <br>
+                    <h4 class="card-title">Ｑ1.徳川家康が手本にした将軍は？</h4>
+                    <hr>
+                    <a href="" class="btn btn--yellow btn--cubic">①上杉謙信</a>
+                    <a href="" class="btn btn--yellow btn--cubic">②武田信玄</a>
+                    <a href="" class="btn btn--yellow btn--cubic">③織田信長</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <a class="btn-emergency"><span class="btn-emergency-bottom"></span><span class="btn-emergency-top"><span>PASS</span></span></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js"></script>
+
+    <div style="position:absolute; top:460px; left:50px">
+    <div class="balloon3-right">
+     FIGHT!
+    </div>
+    </div>
+
+    <div style="position:absolute; top:460px; left:180px">
+    <img src="css/image23.png" alt="Inspiration lion" title="lion">
+    </div>
+    <script>
+
+        new Vue({
+            el: '#app'
+        })
+    </script>
+</body>      
+
+
